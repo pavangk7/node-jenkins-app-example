@@ -10,12 +10,7 @@ pipeline {
      
   stages {
         
-    stage('Git') {
-      steps {
-        git  branch: 'main' 'https://github.com/pavangk7/node-jenkins-app-example.git'
-      }
-    }
-         
+            
     stage('Build & Publish') {
       steps {
         script {
