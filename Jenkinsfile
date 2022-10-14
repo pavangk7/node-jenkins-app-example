@@ -12,7 +12,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git  branch: 'develop' 'https://git.bcbsa.com/Commercia Systems/nssp-ui'
+        git  branch: 'main' 'https://github.com/pavangk7/node-jenkins-app-example.git'
       }
     }
          
