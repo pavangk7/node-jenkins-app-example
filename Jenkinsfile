@@ -20,16 +20,17 @@ pipeline {
       steps {
         switch(env.ENV) {
             case 'Dev':
-            sh 'npm  run build-dev'
-            break
+              sh 'npm  run build-dev'
+              break
             case 'PV':
-            sh 'npm  run build-py'
-            break
+              sh 'npm  run build-py'
+              break
             case 'PE':
-            sh 'npm run build-pe'
-            break
+              sh 'npm run build-pe'
+              break
             case 'PROD':
-            sh 'npm run build-production'
+              sh 'npm run build-production'
+              break
                         
         }
                 
