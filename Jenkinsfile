@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-           node {
-                label 'Linux-commercial'
-            }
-  }
+  
   parameters{
         choice(name: "ENV", choices: ["Dev", "PVE", "PV", "PE", "PROD"], description: " multi-choice parameter Pipeline")
   }  
