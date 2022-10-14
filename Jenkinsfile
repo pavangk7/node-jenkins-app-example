@@ -18,6 +18,7 @@ pipeline {
          
     stage('Build & Publish') {
       steps {
+        script {
         switch(env.ENV) {
             case 'Dev':
               sh 'npm  run build-dev'
@@ -32,6 +33,7 @@ pipeline {
               sh 'npm run build-production'
               break
                         
+        }
         }
                 
         }
