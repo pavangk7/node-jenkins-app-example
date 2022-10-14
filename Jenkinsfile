@@ -28,7 +28,7 @@ pipeline {
             case 'PE':
             sh 'npm run build-pe'
             break
-            case 'PROD'
+            case 'PROD':
             sh 'npm run build-production'
                         
         }
