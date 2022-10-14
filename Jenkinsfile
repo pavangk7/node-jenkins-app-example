@@ -1,7 +1,7 @@
 pipeline {
   agent {
            node {
-                label 'Linux-commercial'
+                label 'None'
             }
   }
   parameters{
@@ -10,7 +10,8 @@ pipeline {
      
   stages {
         
-            
+    
+         
     stage('Build & Publish') {
       steps {
         script {
@@ -54,5 +55,4 @@ pipeline {
                     
                 }
             }
-    } 
-}
+    } }
