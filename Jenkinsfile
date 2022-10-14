@@ -18,7 +18,7 @@ pipeline {
          
     stage('Build & Publish') {
       steps {
-        switch($params.ENV) {
+        switch(env.ENV) {
             case 'Dev':
             sh 'npm  run build-dev'
             break
