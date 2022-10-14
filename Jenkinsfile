@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-           node {
-                label 'None'
-            }
-  }
+  agent any
   parameters{
         choice(name: "ENV", choices: ["Dev", "PVE", "PV", "PE", "PROD"], description: " multi-choice parameter Pipeline")
   }  
